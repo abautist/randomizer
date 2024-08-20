@@ -75,7 +75,7 @@ export default function Randomizer() {
   return (
     <ThemeProvider>
       <Congrats secondChoice={secondChoice} />
-      <div className='flex justify-center pb-16 text-6xl'>Parhelion's Choice</div>
+      <div className='flex justify-center pb-16 text-6xl'>{"Parhelion's Choice"}</div>
       <div className="flex flex-col justify-between md:w-[900px] md:px-36">
         <form onSubmit={e => randomizer(e, movies)}>
           <div className="flex flex-col justify-between">

@@ -75,7 +75,7 @@ export default function Randomizer() {
   return (
     <ThemeProvider>
       <Congrats secondChoice={secondChoice} />
-      <div className='flex justify-center pb-16 text-6xl'>{"Parhelion's Choice"}</div>
+      <div className='flex justify-center pb-8 md:text-6xl'>{"Parhelion's Choice"}</div>
       <div className="flex flex-col justify-between md:w-[900px] md:px-36">
         <form onSubmit={e => randomizer(e, movies)}>
           <div className="flex flex-col justify-between">
@@ -105,8 +105,8 @@ export default function Randomizer() {
             <Button className="w-full" type="submit" color='pricePrimary.tone'>{movieChoice ? 'Again!' : 'Randomize'}</Button>
           </div>
         </form>
-        {movieChoice ? <div className='flex mb-4 text-3xl justify-center'>{movieChoice}</div> : null}
-        {secondChoice ? <div className='flex mb-4 text-3xl justify-center'>{secondChoice}</div> : null}
+        {movieChoice ? <div className='flex mb-4 md:text-6xl justify-center text-center'>{movieChoice}</div> : null}
+        {secondChoice ? <div className='flex mb-4 md:text-6xl justify-center text-center'>{secondChoice}</div> : null}
         <Button className="w-full mb-4" color='pricePrimary.tone' onClick={reset}>Clear All</Button>
       </div>
     </ThemeProvider>
